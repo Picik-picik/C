@@ -25,7 +25,7 @@ int main(void){
 	float num2 = 3.24+5.12F; // 소문자 f 대신 대문자 F를 써도 된다!
 
 	*정수형 상수의 표현을 위한 접미사
-	접미사	     자료형		   사용의 예
+	접미사          자료형		   사용의 예
 	U		unsigned int  		unsigned int n = 1025U
 	L		long			long n = 2467L
 	UL		unsigned long		unsigned long n = 3456UL
@@ -33,8 +33,8 @@ int main(void){
 	ULL		unsigned long long	unsigned long long n = 8979ULL
 
 	* 실수형 상수의 표현을 위한 접미사
-	F		float				float f = 3.15F
-	L 		long double			long double f = 5.789L
+	F		float			float f = 3.15F
+	L 		long double		long double f = 5.789L
 
 	대소문자를 구분하지 않으므로 눈에 잘 띄도록 상황에 맞게 대소문자를 선택하면 된다.
 	*/
