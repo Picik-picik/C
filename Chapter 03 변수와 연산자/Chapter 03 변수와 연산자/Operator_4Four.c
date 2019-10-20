@@ -5,11 +5,11 @@ int main(void){
 	int num2 = 12;
 
 	printf("num1 : %d\n", num1);
-	printf("num1 : %d\n", num1++); // ÈÄÀ§ Áõ°¡ 
+	printf("num1 : %d\n", num1++); // í›„ìœ„ ì¦ê°€
 	printf("num1 : %d\n", num1);
 
 	printf("num2 : %d\n", num2);
-	printf("num2 : %d\n", ++num2); // ÀüÀ§ Áõ°¡ 
+	printf("num2 : %d\n", ++num2); // ì „ìœ„ ì¦ê°€
 	printf("num2 : %d\n", num2);
 	return 0;
 }
