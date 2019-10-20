@@ -5,7 +5,7 @@ int main(void){
 	printf("%d + %d = %d\n", num1, num2, num1 + num2);
 	printf("%d - %d = %d\n", num1, num2, num1 - num2);
 	printf("%d X %d = %d\n", num1, num2, num1 * num2);
-	printf("%d / %dÀÇ ¸ò = %d\n", num1, num2, num1 / num2);
-	printf("%d / %dÀÇ ³ª¸ÓÁö = %d\n", num1, num2, num1 % num2);
+	printf("%d / %dì˜ ëª« = %d\n", num1, num2, num1 / num2);
+	printf("%d / %dì˜ ë‚˜ë¨¸ì§€ = %d\n", num1, num2, num1 % num2);
 	return 0;
 }
