@@ -3,6 +3,6 @@
 int main(void){
 	int num1 = 15;	// 00000000 00000000 00000000 00001111
 	int num2 = ~num1;
-	printf("NOT ¿¬»êÀÇ °á°ú : %d \n", num2);
+	printf("NOT ì—°ì‚°ì˜ ê²°ê³¼ : %d \n", num2);
 	return 0;
 }
