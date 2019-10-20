@@ -4,6 +4,6 @@ int main(void){
 	int num1 = 15;	// 00000000 00000000 00000000 00001111
 	int num2 = 20;	// 00000000 00000000 00000000 00010100
 	int num3 = num1 | num2;
-	printf("OR ¿¬»êÀÇ °á°ú : %d \n", num3);
+	printf("OR ì—°ì‚°ì˜ ê²°ê³¼ : %d \n", num3);
 	return 0;
 }
