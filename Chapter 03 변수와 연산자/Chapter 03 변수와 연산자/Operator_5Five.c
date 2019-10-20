@@ -2,7 +2,7 @@
 
 int main(void){
 	int num1 = 10;
-	int num2 = (num1--) + 2; // ÈÄÀ§ °¨¼Ò 
+	int num2 = (num1--) + 2; // í›„ìœ„ ê°ì†Œ
 
 	printf("num1 : %d\n", num1);
 	printf("num2 : %d\n", num2);
