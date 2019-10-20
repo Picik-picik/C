@@ -5,8 +5,8 @@ int main(void){
 	float num = 0.0;
 
 	for (i = 0; i<100; i++)
-		num += 0.1;
+	     num += 0.1;
 
-	printf("0.1À» 100¹ø ´õÇÑ °á°ú : %f \n", num);
+	printf("0.1ì„ 100ë²ˆ ë”í•œ ê²°ê³¼ : %f \n", num);
 	return 0;
 }
