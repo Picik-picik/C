@@ -15,7 +15,7 @@ int main(void){
 	/*
 	실수 자료형의 정밀도
 	실수 자료형                  소수점 이하 정밀도       바이트 수
-	float			    6자리	                  4
+	float			    6자리                   4
 	double			    15자리                  8
 	long double	   	    18자리                  12
 	*/
