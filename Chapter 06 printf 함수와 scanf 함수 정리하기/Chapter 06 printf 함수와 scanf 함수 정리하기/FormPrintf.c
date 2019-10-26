@@ -2,25 +2,25 @@
 
 int main(void) {
 	int myAge = 12;
-	printf("Á¦ ³ªÀÌ´Â 10Áø¼ö·Î %d»ì, 16Áø¼ö·Î %X»ìÀÔ´Ï´Ù. \n", myAge, myAge);
-	// %X´Â µ¥ÀÌÅÍ¸¦ 16Áø¼ö·Î Ãâ·ÂÇÏµÇ, ¾ËÆÄºªÀº ´ë¹®ÀÚ·Î Ãâ·ÂÇÑ´Ù´Â ÀÇ¹Ì
-	// X°¡ ´ë¹®ÀÚÀÌ¹Ç·Î, ¼Ò¹®ÀÚ·Î ±³Ã¼ÇÏ¸é ¾ËÆÄºªµµ ¼Ò¹®ÀÚ·Î Ãâ·ÂµÈ´Ù.
+	printf("ì œ ë‚˜ì´ëŠ” 10ì§„ìˆ˜ë¡œ %dì‚´, 16ì§„ìˆ˜ë¡œ %Xì‚´ìž…ë‹ˆë‹¤. \n", myAge, myAge);
+	// %XëŠ” ë°ì´í„°ë¥¼ 16ì§„ìˆ˜ë¡œ ì¶œë ¥í•˜ë˜, ì•ŒíŒŒë²³ì€ ëŒ€ë¬¸ìžë¡œ ì¶œë ¥í•œë‹¤ëŠ” ì˜ë¯¸
+	// Xê°€ ëŒ€ë¬¸ìžì´ë¯€ë¡œ, ì†Œë¬¸ìžë¡œ êµì²´í•˜ë©´ ì•ŒíŒŒë²³ë„ ì†Œë¬¸ìžë¡œ ì¶œë ¥ëœë‹¤.
 	return 0;
 }
 /*
-¼­½Ä¹®ÀÚÀÇ Á¾·ù¿Í ±× ÀÇ¹Ì
-¼­½Ä¹®ÀÚ     Ãâ·Â ´ë»ó(ÀÚ·áÇü)     Ãâ·Â ÇüÅÂ
-%d           char, short, int      ºÎÈ£ ÀÖ´Â 10Áø¼ö Á¤¼ö
-%ld          long                  ºÎÈ£ ÀÖ´Â 10Áø¼ö Á¤¼ö
-%lld         long long             ºÎÈ£ ÀÖ´Â 10Áø¼ö Á¤¼ö
-%u           unsigned int          ºÎÈ£ ¾ø´Â 10Áø¼ö Á¤¼ö
-%o           unsigned int          ºÎÈ£ ¾ø´Â 8Áø¼ö Á¤¼ö
-%x, %X       unsigned int          ºÎÈ£ ¾ø´Â 16Áø¼ö Á¤¼ö
-%f           float, double         10Áø¼ö ¹æ½ÄÀÇ ºÎµ¿¼Ò¼öÁ¡ ½Ç¼ö
-%Lf          long double           10Áø¼ö ¹æ½ÄÀÇ ºÎµ¿¼Ò¼öÁ¡ ½Ç¼ö
-%e, %E       float, double         e ¶Ç´Â E ¹æ½ÄÀÇ ºÎµ¿¼Ò¼öÁ¡ ½Ç¼ö
-%g, %G       float, double         °ª¿¡ µû¶ó %f¿Í %e »çÀÌ¿¡¼­ ¼±ÅÃ
-%c           char, short, int      °ª¿¡ ´ëÀÀÇÏ´Â ¹®ÀÚ
-%s           char *                ¹®ÀÚ¿­
-%p           void *                Æ÷ÀÎÅÍÀÇ ÁÖ¼Ò °ª
+ì„œì‹ë¬¸ìžì˜ ì¢…ë¥˜ì™€ ê·¸ ì˜ë¯¸
+ì„œì‹ë¬¸ìž     ì¶œë ¥ ëŒ€ìƒ(ìžë£Œí˜•)       ì¶œë ¥ í˜•íƒœ
+%d           char, short, int      ë¶€í˜¸ ìžˆëŠ” 10ì§„ìˆ˜ ì •ìˆ˜
+%ld          long                  ë¶€í˜¸ ìžˆëŠ” 10ì§„ìˆ˜ ì •ìˆ˜
+%lld         long long             ë¶€í˜¸ ìžˆëŠ” 10ì§„ìˆ˜ ì •ìˆ˜
+%u           unsigned int          ë¶€í˜¸ ì—†ëŠ” 10ì§„ìˆ˜ ì •ìˆ˜
+%o           unsigned int          ë¶€í˜¸ ì—†ëŠ” 8ì§„ìˆ˜ ì •ìˆ˜
+%x, %X       unsigned int          ë¶€í˜¸ ì—†ëŠ” 16ì§„ìˆ˜ ì •ìˆ˜
+%f           float, double         10ì§„ìˆ˜ ë°©ì‹ì˜ ë¶€ë™ì†Œìˆ˜ì  ì‹¤ìˆ˜
+%Lf          long double           10ì§„ìˆ˜ ë°©ì‹ì˜ ë¶€ë™ì†Œìˆ˜ì  ì‹¤ìˆ˜
+%e, %E       float, double         e ë˜ëŠ” E ë°©ì‹ì˜ ë¶€ë™ì†Œìˆ˜ì  ì‹¤ìˆ˜
+%g, %G       float, double         ê°’ì— ë”°ë¼ %fì™€ %e ì‚¬ì´ì—ì„œ ì„ íƒ
+%c           char, short, int      ê°’ì— ëŒ€ì‘í•˜ëŠ” ë¬¸ìž
+%s           char *                ë¬¸ìžì—´
+%p           void *                í¬ì¸í„°ì˜ ì£¼ì†Œ ê°’
 */
