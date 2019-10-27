@@ -2,7 +2,7 @@
 
 int main(void) {
 	int dan = 0, num = 1;
-	printf("¸î ´Ü? : ");
+	printf("ëª‡ ë‹¨? : ");
 	scanf_s("%d", &dan);
 
 	do {
