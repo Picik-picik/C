@@ -2,7 +2,7 @@
 
 int main(void) {
 	int dan = 0, num = 9;
-	printf("¿ª¼øÀ¸·Î ¸î ´Ü? : ");
+	printf("ì—­ìˆœìœ¼ë¡œ ëª‡ ë‹¨? : ");
 	scanf_s("%d", &dan);
 
 	while (num > 0) {
