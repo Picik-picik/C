@@ -3,9 +3,9 @@
 int main(void){
 	int num1, num2, num3, result;
 
-	printf("¹®Á¦ 03-1 [scanf ÇÔ¼öÀÇ È°¿ë]\n");
-	printf("¹®Á¦ 2)\n");
-	printf("¼¼ °³ÀÇ Á¤¼ö ÀÔ·Â : ");
+	printf("ë¬¸ì œ 03-1 [scanf í•¨ìˆ˜ì˜ í™œìš©]\n");
+	printf("ë¬¸ì œ 2)\n");
+	printf("ì„¸ ê°œì˜ ì •ìˆ˜ ì…ë ¥ : ");
 	scanf_s("%d %d %d", &num1, &num2, &num3);
 	result = num1 * num2 + num3;
 	printf("%d X %d + %d = %d\n", num1, num2, num3, result);
