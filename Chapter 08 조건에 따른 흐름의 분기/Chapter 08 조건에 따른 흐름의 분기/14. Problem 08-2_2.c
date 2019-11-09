@@ -4,8 +4,8 @@ int main(void) {
 	int A, Z;
 	int result;
 
-	printf("¹®Á¦ 08-2 [continue & breakÀÇ È°¿ë]\n");
-	printf("¹®Á¦ 2)\n");
+	printf("ë¬¸ì œ 08-2 [continue & breakì˜ í™œìš©]\n");
+	printf("ë¬¸ì œ 2)\n");
 	for (A = 0; A < 10; A++) {
 		for (Z = 0; Z < 10; Z++) {
 			if (A == Z)
