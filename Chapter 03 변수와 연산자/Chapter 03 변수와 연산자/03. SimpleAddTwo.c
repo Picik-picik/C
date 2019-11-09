@@ -6,8 +6,8 @@ int main(void){
 
 	int result = num1 + num2;
 
-	printf("µ¡¼À °á°ú : %d \n", result);
+	printf("ë§ì…ˆ ê²°ê³¼ : %d \n", result);
 	printf("%d + %d = %d \n", num1, num2, result);
-	printf("%d¿Í(°ú) %dÀÇ ÇÕÀº %dÀÔ´Ï´Ù. \n", num1, num2, result);
+	printf("%dì™€(ê³¼) %dì˜ í•©ì€ %dì…ë‹ˆë‹¤. \n", num1, num2, result);
 	return 0;
 }
