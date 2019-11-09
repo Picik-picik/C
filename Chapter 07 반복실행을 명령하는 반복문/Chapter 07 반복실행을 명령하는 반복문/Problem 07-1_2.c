@@ -2,7 +2,10 @@
 
 int main(void) {
 	int num1 = 0, num2 = 0;
-	printf("ÀÔ·ÂÇÑ ¼ö¸¸Å­ 3ÀÇ ¹è¼ö Ãâ·Â : ");
+	
+	printf("ë¬¸ì œ 07-1 [whileë¬¸ì˜ í™œìš©]\n");
+	printf("ë¬¸ì œ 2)\n");
+	printf("ì…ë ¥í•œ ìˆ˜ë§Œí¼ 3ì˜ ë°°ìˆ˜ ì¶œë ¥ : ");
 	scanf_s("%d", &num1);
 
 	while (num2++ < num1) {
