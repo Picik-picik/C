@@ -3,8 +3,8 @@
 int main(void) {
 	int i, j;
 
-	printf("¹®Á¦ 08-2 [continue & breakÀÇ È°¿ë]\n");
-	printf("¹®Á¦ 1)\n");
+	printf("ë¬¸ì œ 08-2 [continue & breakì˜ í™œìš©]\n");
+	printf("ë¬¸ì œ 1)\n");
 	for (i = 2; i < 10; i++) {
 		if (i % 2 != 0)
 			continue;
