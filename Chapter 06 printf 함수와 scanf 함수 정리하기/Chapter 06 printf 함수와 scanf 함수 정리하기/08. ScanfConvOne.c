@@ -2,10 +2,10 @@
 
 int main(void) {
 	int num1, num2, num3;
-	printf("¼¼ °³ÀÇ Á¤¼ö ÀÔ·Â : ");
+	printf("ì„¸ ê°œì˜ ì •ìˆ˜ ì…ë ¥ : ");
 	scanf_s("%d %o %x", &num1, &num2, &num3);
 
-	printf("ÀÔ·ÂµÈ Á¤¼ö 10Áø¼ö Ãâ·Â : ");
+	printf("ì…ë ¥ëœ ì •ìˆ˜ 10ì§„ìˆ˜ ì¶œë ¥ : ");
 	printf("%d %d %d \n", num1, num2, num3);
 	return 0;
 }
