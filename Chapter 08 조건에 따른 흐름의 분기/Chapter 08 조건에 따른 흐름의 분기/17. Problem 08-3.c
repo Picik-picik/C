@@ -2,21 +2,23 @@
 
 int main(void) {
 	int n;
-	printf("0ÀÌ»óÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	
+	printf("ë¬¸ì œ 08-3 [switchë¬¸ìœ¼ë¡œ ëŒ€ì‹ í•˜ê¸°]\n");
+	printf("0ì´ìƒì˜ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf_s("%d", &n);
 
 	switch (n / 10) {
 	case 0:
-		printf("0 ÀÌ»ó 10¹Ì¸¸ \n");
+		printf("0 ì´ìƒ 10ë¯¸ë§Œ \n");
 		break;
 	case 1:
-		printf("10ÀÌ»ó 20¹Ì¸¸ \n");
+		printf("10ì´ìƒ 20ë¯¸ë§Œ \n");
 		break;
 	case 2:
-		printf("20ÀÌ»ó 30¹Ì¸¸ \n");
+		printf("20ì´ìƒ 30ë¯¸ë§Œ \n");
 		break;
 	default:
-		printf("30ÀÌ»ó \n");
+		printf("30ì´ìƒ \n");
 	}
 
 	return 0;
