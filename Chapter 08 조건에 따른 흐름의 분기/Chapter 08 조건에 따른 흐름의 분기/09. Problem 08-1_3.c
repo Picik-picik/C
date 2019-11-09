@@ -4,23 +4,23 @@ int main(void) {
 	int kor, eng, math;
 	double avg;
 
-	printf("¹®Á¦ 08-1 [if~else¹®ÀÇ È°¿ë]\n");
-	printf("¹®Á¦ 3)\n");
-	printf("±¹¾î, ¿µ¾î, ¼öÇĞ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ë¬¸ì œ 08-1 [if~elseë¬¸ì˜ í™œìš©]\n");
+	printf("ë¬¸ì œ 3)\n");
+	printf("êµ­ì–´, ì˜ì–´, ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf_s("%d %d %d", &kor, &eng, &math);
 
-	avg = (kor + eng + math) / 3;
+	avg = (kor + eng + math) / 3.0;
 
 	if (avg >= 90.0)
-		printf("Æò±Õ %.2fÁ¡\nÀÌ¹ø ÇĞÁ¡Àº AÀÔ´Ï´Ù. \n", avg);
+		printf("í‰ê·  %.2fì \nì´ë²ˆ í•™ì ì€ Aì…ë‹ˆë‹¤. \n", avg);
 	else if (avg >= 80.0)
-		printf("Æò±Õ %.2fÁ¡\nÀÌ¹ø ÇĞÁ¡Àº BÀÔ´Ï´Ù. \n", avg);
+		printf("í‰ê·  %.2fì \nì´ë²ˆ í•™ì ì€ Bì…ë‹ˆë‹¤. \n", avg);
 	else if (avg >= 70.0)
-		printf("Æò±Õ %.2fÁ¡\nÀÌ¹ø ÇĞÁ¡Àº CÀÔ´Ï´Ù. \n", avg);
+		printf("í‰ê·  %.2fì \nì´ë²ˆ í•™ì ì€ Cì…ë‹ˆë‹¤. \n", avg);
 	else if (avg >= 50.0)
-		printf("Æò±Õ %.2fÁ¡\nÀÌ¹ø ÇĞÁ¡Àº DÀÔ´Ï´Ù. \n", avg);
+		printf("í‰ê·  %.2fì \nì´ë²ˆ í•™ì ì€ Dì…ë‹ˆë‹¤. \n", avg);
 	else
-		printf("Æò±Õ %.2fÁ¡\nÀÌ¹ø ÇĞÁ¡Àº FÀÔ´Ï´Ù. \n", avg);
+		printf("í‰ê·  %.2fì \nì´ë²ˆ í•™ì ì€ Fì…ë‹ˆë‹¤. \n", avg);
 
 	return 0;
 }
