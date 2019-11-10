@@ -2,8 +2,8 @@
 int NumberCompare(int num1, int num2);
 
 int main(void) {
-	printf("3°ú 4Áß¿¡¼­ Å« ¼ö´Â %d ÀÌ´Ù. \n", NumberCompare(3, 4));
-	printf("7°ú 2Áß¿¡¼­ Å« ¼ö´Â %d ÀÌ´Ù. \n", NumberCompare(7, 2));
+	printf("3ê³¼ 4ì¤‘ì—ì„œ í° ìˆ˜ëŠ” %d ì´ë‹¤. \n", NumberCompare(3, 4));
+	printf("7ê³¼ 2ì¤‘ì—ì„œ í° ìˆ˜ëŠ” %d ì´ë‹¤. \n", NumberCompare(7, 2));
 
 	return 0;
 }
@@ -16,53 +16,53 @@ int NumberCompare(int num1, int num2) {
 }
 
 /*
-returnÀÌ Áö´Ï´Â µÎ °¡Áö ÀÇ¹Ì Áß ÇÑ°¡Áö ÀÇ¹Ì¸¸ »ì¸®±â
-Å°¿öµå returnÀº °ªÀ» ¹ÝÈ¯ÇÏ¸é¼­ ÇÔ¼ö¸¦ ºüÁ®³ª°¥ ¶§ »ç¿ëµÈ´Ù. Áï, µÎ°¡Áö ÀÇ¹Ì°¡ ´ã°ÜÀÖ´Ù.
+returnì´ ì§€ë‹ˆëŠ” ë‘ ê°€ì§€ ì˜ë¯¸ ì¤‘ í•œê°€ì§€ ì˜ë¯¸ë§Œ ì‚´ë¦¬ê¸°
+í‚¤ì›Œë“œ returnì€ ê°’ì„ ë°˜í™˜í•˜ë©´ì„œ í•¨ìˆ˜ë¥¼ ë¹ ì ¸ë‚˜ê°ˆ ë•Œ ì‚¬ìš©ëœë‹¤. ì¦‰, ë‘ê°€ì§€ ì˜ë¯¸ê°€ ë‹´ê²¨ìžˆë‹¤.
 
-* ÇÔ¼ö¸¦ ºüÁ®³ª°£´Ù!
-* °ªÀ» ¹ÝÈ¯ÇÑ´Ù.
+* í•¨ìˆ˜ë¥¼ ë¹ ì ¸ë‚˜ê°„ë‹¤!
+* ê°’ì„ ë°˜í™˜í•œë‹¤.
 
-°£È¤ ¹ÝÈ¯ÇüÀÌ void·Î ¼±¾ðµÈ ÇÔ¼ö¿¡¼­´Â return¹®À» »ç¿ëÇÒ ¼ö ¾ø´Â °ÍÀ¸·Î ¾Æ´Â °æ¿ì°¡ ÀÖ´Âµ¥,
-¹ÝÈ¯ÇüÀÌ voidÀÎ ÇÔ¼ö¿¡¼­µµ ´ÙÀ½ÀÇ ÇüÅÂ·Î return¹®À» »ðÀÔÇÒ ¼ö ÀÖ´Ù.
+ê°„í˜¹ ë°˜í™˜í˜•ì´ voidë¡œ ì„ ì–¸ëœ í•¨ìˆ˜ì—ì„œëŠ” returnë¬¸ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ëŠ” ê²ƒìœ¼ë¡œ ì•„ëŠ” ê²½ìš°ê°€ ìžˆëŠ”ë°,
+ë°˜í™˜í˜•ì´ voidì¸ í•¨ìˆ˜ì—ì„œë„ ë‹¤ìŒì˜ í˜•íƒœë¡œ returnë¬¸ì„ ì‚½ìž…í•  ìˆ˜ ìžˆë‹¤.
 
 void NoReturnType(int num) {
    if (num < 0)
-      return; // °ªÀ» ¹ÝÈ¯ÇÏÁö ¾Ê´Â return¹®!
+      return; // ê°’ì„ ë°˜í™˜í•˜ì§€ ì•ŠëŠ” returnë¬¸!
    ......
 }
-À§ÀÇ return¹®¿¡´Â ¹ÝÈ¯ÇÒ °ªÀÌ ¸í½ÃµÇ¾î ÀÖÁö ¾ÊÀºµ¥, ÀÌ´Â return µÎ °¡Áö ÀÇ¹Ì Áß ´ÙÀ½ ÇÑ °¡Áö ÀÇ¹Ì¸¸ ´ã¾Æ¼­ ¼±¾ðÇß±â ¶§¹®ÀÌ´Ù.
+ìœ„ì˜ returnë¬¸ì—ëŠ” ë°˜í™˜í•  ê°’ì´ ëª…ì‹œë˜ì–´ ìžˆì§€ ì•Šì€ë°, ì´ëŠ” return ë‘ ê°€ì§€ ì˜ë¯¸ ì¤‘ ë‹¤ìŒ í•œ ê°€ì§€ ì˜ë¯¸ë§Œ ë‹´ì•„ì„œ ì„ ì–¸í–ˆê¸° ë•Œë¬¸ì´ë‹¤.
 
-"°ªÀÇ ¹ÝÈ¯ ¾øÀÌ ±×³É ÇÔ¼ö¸¦ ºüÁ®³ª°£´Ù!"
+"ê°’ì˜ ë°˜í™˜ ì—†ì´ ê·¸ëƒ¥ í•¨ìˆ˜ë¥¼ ë¹ ì ¸ë‚˜ê°„ë‹¤!"
 
-ÀÌ·¸µí °ªÀ» ¹ÝÈ¯ÇÏÁö ¾Ê°í ÇÔ¼ö¸¦ ºüÁ®³ª°¡´Â ¸ñÀûÀ¸·Î¸¸ ¼±¾ðÀÌ µÇ¾úÀ¸¹Ç·Î, ¹ÝÈ¯ÇüÀÌ voidÇüÀÎ ÇÔ¼ö¿¡µµ »ðÀÔÀÌ °¡´ÉÇÏ´Ù.
-±×¸®°í ½ÇÁ¦·Î ¹ÝÈ¯ÇüÀÌ voidÀÎ ÇÔ¼ö¿¡ ÀÌ·¯ÇÑ return¹®ÀÌ »ðÀÔµÇ´Â °æ¿ìµµ °£È¤ ÀÖ´Ù.
+ì´ë ‡ë“¯ ê°’ì„ ë°˜í™˜í•˜ì§€ ì•Šê³  í•¨ìˆ˜ë¥¼ ë¹ ì ¸ë‚˜ê°€ëŠ” ëª©ì ìœ¼ë¡œë§Œ ì„ ì–¸ì´ ë˜ì—ˆìœ¼ë¯€ë¡œ, ë°˜í™˜í˜•ì´ voidí˜•ì¸ í•¨ìˆ˜ì—ë„ ì‚½ìž…ì´ ê°€ëŠ¥í•˜ë‹¤.
+ê·¸ë¦¬ê³  ì‹¤ì œë¡œ ë°˜í™˜í˜•ì´ voidì¸ í•¨ìˆ˜ì— ì´ëŸ¬í•œ returnë¬¸ì´ ì‚½ìž…ë˜ëŠ” ê²½ìš°ë„ ê°„í˜¹ ìžˆë‹¤.
 
-ÇÔ¼öÀÇ Á¤ÀÇ¿Í ±×¿¡ µû¸¥ ¿øÇüÀÇ ¼±¾ð
-ÇÔ¼öÀÇ À§Ä¡¸¦ °áÁ¤ÇÒ ¶§¿¡µµ ÁÖÀÇ¸¦ ±â¿ï¾î¾ß ÇÑ´Ù.
+í•¨ìˆ˜ì˜ ì •ì˜ì™€ ê·¸ì— ë”°ë¥¸ ì›í˜•ì˜ ì„ ì–¸
+í•¨ìˆ˜ì˜ ìœ„ì¹˜ë¥¼ ê²°ì •í•  ë•Œì—ë„ ì£¼ì˜ë¥¼ ê¸°ìš¸ì–´ì•¼ í•œë‹¤.
 
-Ã¹ ¹øÂ° °æ¿ì 'Increment ÇÔ¼öÀÇ Á¤ÀÇ'°¡ 'Increment ÇÔ¼öÀÇ È£Ãâ¹®'º¸´Ù ¸ÕÀú µîÀåÇÏ°í ÀÖ´Ù.
-µû¶ó¼­ ÄÄÆÄÀÏ·¯´Â main ÇÔ¼ö¿¡ Á¸ÀçÇÏ´Â Increment ÇÔ¼öÀÇ È£Ãâ¹®À» º¸¸é¼­ ´ÙÀ½°ú °°ÀÌ ÆÇ´ÜÇÏ°í ¹«¸® ¾øÀÌ ÄÄÆÄÀÏ ÇÑ´Ù.
-"¾Æ! ¾Õ¼­ ³»°¡ ÄÄÆÄÀÏ Çß´ø Increment ÇÔ¼ö¸¦ È£ÃâÇÏ´Â±¸³ª!"
+ì²« ë²ˆì§¸ ê²½ìš° 'Increment í•¨ìˆ˜ì˜ ì •ì˜'ê°€ 'Increment í•¨ìˆ˜ì˜ í˜¸ì¶œë¬¸'ë³´ë‹¤ ë¨¼ì € ë“±ìž¥í•˜ê³  ìžˆë‹¤.
+ë”°ë¼ì„œ ì»´íŒŒì¼ëŸ¬ëŠ” main í•¨ìˆ˜ì— ì¡´ìž¬í•˜ëŠ” Increment í•¨ìˆ˜ì˜ í˜¸ì¶œë¬¸ì„ ë³´ë©´ì„œ ë‹¤ìŒê³¼ ê°™ì´ íŒë‹¨í•˜ê³  ë¬´ë¦¬ ì—†ì´ ì»´íŒŒì¼ í•œë‹¤.
+"ì•„! ì•žì„œ ë‚´ê°€ ì»´íŒŒì¼ í–ˆë˜ Increment í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ëŠ”êµ¬ë‚˜!"
 
-µÎ ¹øÂ° °æ¿ì 'Increment ÇÔ¼öÀÇ Á¤ÀÇ'¿¡ ¾Õ¼­ 'Increment ÇÔ¼öÀÇ È£Ãâ¹®'ÀÌ ¸ÕÀú µîÀåÇÒ °æ¿ì ¹®Á¦°¡ ¹ß»ýÇÑ´Ù.
-À§¿¡¼­ ¾Æ·¡·Î ÄÄÆÄÀÏÀ» ÁøÇàÇÏ´Â ÄÄÆÄÀÏ·¯´Â Increment ÇÔ¼öÀÇ È£Ãâ¹®À» º¸¸é¼­ ´ÙÀ½°ú °°ÀÌ ºÒÆòÀ» ÇÑ´Ù.(ÄÄÆÄÀÏ ¿¡·¯¸¦ ÀÏÀ¸Å²´Ù)
-"Increment ÇÔ¼ö? ³­ ÀÌ·± ÇÔ¼ö º»ÀûÀÌ ¾ø´Âµ¥"
+ë‘ ë²ˆì§¸ ê²½ìš° 'Increment í•¨ìˆ˜ì˜ ì •ì˜'ì— ì•žì„œ 'Increment í•¨ìˆ˜ì˜ í˜¸ì¶œë¬¸'ì´ ë¨¼ì € ë“±ìž¥í•  ê²½ìš° ë¬¸ì œê°€ ë°œìƒí•œë‹¤.
+ìœ„ì—ì„œ ì•„ëž˜ë¡œ ì»´íŒŒì¼ì„ ì§„í–‰í•˜ëŠ” ì»´íŒŒì¼ëŸ¬ëŠ” Increment í•¨ìˆ˜ì˜ í˜¸ì¶œë¬¸ì„ ë³´ë©´ì„œ ë‹¤ìŒê³¼ ê°™ì´ ë¶ˆí‰ì„ í•œë‹¤.(ì»´íŒŒì¼ ì—ëŸ¬ë¥¼ ì¼ìœ¼í‚¨ë‹¤)
+"Increment í•¨ìˆ˜? ë‚œ ì´ëŸ° í•¨ìˆ˜ ë³¸ì ì´ ì—†ëŠ”ë°"
 
-ºñ·Ï µÚ¿¡ ÀÌ¾î¼­ Increment ÇÔ¼öÀÇ Á¤ÀÇ°¡ µîÀåÇÏÁö¸¸ C ÄÄÆÄÀÏ·¯´Â ÀÌ¸¦ ¹®Á¦ »ï´Â´Ù.
-Áï ÇÔ¼ö´Â È£ÃâµÇ±â Àü¿¡ ¹Ì¸® Á¤ÀÇµÇ¾î¾ß ÇÑ´Ù. ÇÏÁö¸¸ µÎ ¹øÂ° °æ¿ì ±¸¼ºÀ¸·Î ÇÁ·Î±×·¡¹ÖÀ» ÇÒ ¼ö ÀÖ´Â ¹æ¹ýÀÌ ÀÖ´Ù.
-±×°ÍÀº ÄÄÆÄÀÏ·¯¿¡°Ô Increment ÇÔ¼ö°¡ µÚ¿¡¼­ ³ª¿Â´Ù°í ¾Ë·ÁÁÖ´Â °ÍÀÌ´Ù.
+ë¹„ë¡ ë’¤ì— ì´ì–´ì„œ Increment í•¨ìˆ˜ì˜ ì •ì˜ê°€ ë“±ìž¥í•˜ì§€ë§Œ C ì»´íŒŒì¼ëŸ¬ëŠ” ì´ë¥¼ ë¬¸ì œ ì‚¼ëŠ”ë‹¤.
+ì¦‰ í•¨ìˆ˜ëŠ” í˜¸ì¶œë˜ê¸° ì „ì— ë¯¸ë¦¬ ì •ì˜ë˜ì–´ì•¼ í•œë‹¤. í•˜ì§€ë§Œ ë‘ ë²ˆì§¸ ê²½ìš° êµ¬ì„±ìœ¼ë¡œ í”„ë¡œê·¸ëž˜ë°ì„ í•  ìˆ˜ ìžˆëŠ” ë°©ë²•ì´ ìžˆë‹¤.
+ê·¸ê²ƒì€ ì»´íŒŒì¼ëŸ¬ì—ê²Œ Increment í•¨ìˆ˜ê°€ ë’¤ì—ì„œ ë‚˜ì˜¨ë‹¤ê³  ì•Œë ¤ì£¼ëŠ” ê²ƒì´ë‹¤.
 
-"µÚ¿¡ °¡¸é ¹ÝÈ¯ÇüÀÌ intÀÌ°í intÇü Á¤¼ö ÇÏ³ª¸¦ ÀÎÀÚ·Î ¹Þ´Â Increment¶ó´Â ÀÌ¸§ÀÇ ÇÔ¼ö°¡ ³ª¿À°Åµç?
- ±×·¯´Ï±î Increment ÇÔ¼öÀÇ È£Ãâ¹®À» ¸¸³ª¸é ±×³É ÄÄÆÄÀÏ ÇØ Áà, ¿¡ÀÌ! µÚ¿¡¼­ ³ª¿Â´Ù´Ï±î!"
+"ë’¤ì— ê°€ë©´ ë°˜í™˜í˜•ì´ intì´ê³  intí˜• ì •ìˆ˜ í•˜ë‚˜ë¥¼ ì¸ìžë¡œ ë°›ëŠ” Incrementë¼ëŠ” ì´ë¦„ì˜ í•¨ìˆ˜ê°€ ë‚˜ì˜¤ê±°ë“ ?
+ ê·¸ëŸ¬ë‹ˆê¹Œ Increment í•¨ìˆ˜ì˜ í˜¸ì¶œë¬¸ì„ ë§Œë‚˜ë©´ ê·¸ëƒ¥ ì»´íŒŒì¼ í•´ ì¤˜, ì—ì´! ë’¤ì—ì„œ ë‚˜ì˜¨ë‹¤ë‹ˆê¹Œ!"
 
-±×¸®°í ÀÌ·¯ÇÑ ³»¿ëÀ» ´ãÀº ¼±¾ð¿¡ ÇØ´çÇÏ´Â °ÍÀÌ ´ÙÀ½ ¹®ÀåÀÌ´Ù.
-ÀÌ ¹®Àå¿¡´Â ÇÔ¼öÀÇ ÀÌ¸§°ú ¹ÝÈ¯Çü ±×¸®°í ¸Å°³º¯¼ö Á¤º¸°¡ ¸ðµÎ Æ÷ÇÔµÇ¾î ÀÖÀ½¿¡ ÁÖ¸ñÇÏ±â ¹Ù¶õ´Ù.
+ê·¸ë¦¬ê³  ì´ëŸ¬í•œ ë‚´ìš©ì„ ë‹´ì€ ì„ ì–¸ì— í•´ë‹¹í•˜ëŠ” ê²ƒì´ ë‹¤ìŒ ë¬¸ìž¥ì´ë‹¤.
+ì´ ë¬¸ìž¥ì—ëŠ” í•¨ìˆ˜ì˜ ì´ë¦„ê³¼ ë°˜í™˜í˜• ê·¸ë¦¬ê³  ë§¤ê°œë³€ìˆ˜ ì •ë³´ê°€ ëª¨ë‘ í¬í•¨ë˜ì–´ ìžˆìŒì— ì£¼ëª©í•˜ê¸° ë°”ëž€ë‹¤.
 
 int Increment(int n);
 
-µû¶ó¼­ ´ÙÀ½°ú °°ÀÌ ¿¹Á¦¸¦ ÀÛ¼ºÇÒ ¼öµµ ÀÖ´Ù.
+ë”°ë¼ì„œ ë‹¤ìŒê³¼ ê°™ì´ ì˜ˆì œë¥¼ ìž‘ì„±í•  ìˆ˜ë„ ìžˆë‹¤.
 
-int Increment(int n);    // ÇÔ¼öÀÇ ¼±¾ð
+int Increment(int n);    // í•¨ìˆ˜ì˜ ì„ ì–¸
 
 int main(void) {
    int num = 2;
@@ -70,47 +70,47 @@ int main(void) {
    return 0;
 }
 
-int Increment(int n) {   // ÇÔ¼öÀÇ Á¤ÀÇ
+int Increment(int n) {   // í•¨ìˆ˜ì˜ ì •ì˜
    n++;
    return n;
 }
 
-ÀÌ·Î½á main ÇÔ¼ö¿¡¼­ È£ÃâÇÏ´Â Increment ÇÔ¼öÀÇ Á¤ÀÇ°¡ main ÇÔ¼öÀÇ µÚ¿¡ ¿Ã ¼ö ÀÖ°Ô µÇ¾ú´Ù.
-Âü°í·Î ÇÔ¼öÀÇ ¼±¾ð¿¡´Â ¸Å°³º¯¼öÀÇ °¹¼ö ¹× ÀÚ·áÇü Á¤º¸¸¸ Æ÷ÇÔµÇ¸é µÇ±â ¶§¹®¿¡
-´ÙÀ½°ú °°ÀÌ ¸Å°³º¯¼öÀÇ ÀÌ¸§À» »ý·«ÇØ¼­ ¼±¾ðÇÏ´Â °ÍÀÌ °¡´ÉÇÏ´Ù.
+ì´ë¡œì¨ main í•¨ìˆ˜ì—ì„œ í˜¸ì¶œí•˜ëŠ” Increment í•¨ìˆ˜ì˜ ì •ì˜ê°€ main í•¨ìˆ˜ì˜ ë’¤ì— ì˜¬ ìˆ˜ ìžˆê²Œ ë˜ì—ˆë‹¤.
+ì°¸ê³ ë¡œ í•¨ìˆ˜ì˜ ì„ ì–¸ì—ëŠ” ë§¤ê°œë³€ìˆ˜ì˜ ê°¯ìˆ˜ ë° ìžë£Œí˜• ì •ë³´ë§Œ í¬í•¨ë˜ë©´ ë˜ê¸° ë•Œë¬¸ì—
+ë‹¤ìŒê³¼ ê°™ì´ ë§¤ê°œë³€ìˆ˜ì˜ ì´ë¦„ì„ ìƒëžµí•´ì„œ ì„ ì–¸í•˜ëŠ” ê²ƒì´ ê°€ëŠ¥í•˜ë‹¤.
 
 int Increment(int);
 
-¸¶Âù°¡Áö·Î ¿¹Á¦ SmartAddFunc.c¿¡¼­ Á¤ÀÇÇÑ Add ÇÔ¼öÀÇ ¼±¾ðÀº ´ÙÀ½ µÎ °¡Áö ¸ðµÎ°¡ µÉ ¼ö ÀÖ´Ù.
+ë§ˆì°¬ê°€ì§€ë¡œ ì˜ˆì œ SmartAddFunc.cì—ì„œ ì •ì˜í•œ Add í•¨ìˆ˜ì˜ ì„ ì–¸ì€ ë‹¤ìŒ ë‘ ê°€ì§€ ëª¨ë‘ê°€ ë  ìˆ˜ ìžˆë‹¤.
 
-int Add(int num1, int num2); // ¸Å°³º¯¼öÀÇ ÀÌ¸§À» Æ÷ÇÔÇÑ ¼±¾ð
-int Add(int, int);           // ¸Å°³º¯¼öÀÇ ÀÌ¸§À» »ý·«ÇÑ Ç¥Çö
+int Add(int num1, int num2); // ë§¤ê°œë³€ìˆ˜ì˜ ì´ë¦„ì„ í¬í•¨í•œ ì„ ì–¸
+int Add(int, int);           // ë§¤ê°œë³€ìˆ˜ì˜ ì´ë¦„ì„ ìƒëžµí•œ í‘œí˜„
 
-ÇÔ¼ö¿¡ ´ëÇØ¼­ ¸ðµÎ ¼³¸íÇÏ¿´À¸³ª ¸î °¡Áö ¿¹¸¦ ´õ º¸ÀÌ°íÀÚ ÇÑ´Ù.
-ÀÌ¹ø¿¡ ¼Ò°³ÇÏ´Â ¿¹Á¦´Â ´ÙÀ½ÀÇ »óÈ²À» ¼Ò°³ÇÏ±â À§ÇÑ °ÍÀÌ´Ù.
+í•¨ìˆ˜ì— ëŒ€í•´ì„œ ëª¨ë‘ ì„¤ëª…í•˜ì˜€ìœ¼ë‚˜ ëª‡ ê°€ì§€ ì˜ˆë¥¼ ë” ë³´ì´ê³ ìž í•œë‹¤.
+ì´ë²ˆì— ì†Œê°œí•˜ëŠ” ì˜ˆì œëŠ” ë‹¤ìŒì˜ ìƒí™©ì„ ì†Œê°œí•˜ê¸° ìœ„í•œ ê²ƒì´ë‹¤.
 
-"ÇÏ³ªÀÇ ÇÔ¼ö ³»¿¡ µÑ ÀÌ»óÀÇ return¹®ÀÌ Á¸ÀçÇÑ´À °æ¿ì"
+"í•˜ë‚˜ì˜ í•¨ìˆ˜ ë‚´ì— ë‘˜ ì´ìƒì˜ returnë¬¸ì´ ì¡´ìž¬í•˜ëŠ” ê²½ìš°"
 
-±×·¯³ª 'return¹®ÀÌ ½ÇÇàµÇ¸é °ªÀ» ¹ÝÈ¯ÇÏ¸é¼­ ÇÔ¼ö¸¦ ºüÁ®³ª°£´Ù'´Â ±âº»¿øÄ¢À» ÅëÇØ¼­ ½±°Ô ÀÌÇØÇÒ ¼ö ÀÖ´Â ¿¹Á¦ÀÌ´Ù.
+ê·¸ëŸ¬ë‚˜ 'returnë¬¸ì´ ì‹¤í–‰ë˜ë©´ ê°’ì„ ë°˜í™˜í•˜ë©´ì„œ í•¨ìˆ˜ë¥¼ ë¹ ì ¸ë‚˜ê°„ë‹¤'ëŠ” ê¸°ë³¸ì›ì¹™ì„ í†µí•´ì„œ ì‰½ê²Œ ì´í•´í•  ìˆ˜ ìžˆëŠ” ì˜ˆì œì´ë‹¤.
 
-À§ ¿¹Á¦¿¡¼­ Á¤ÀÇµÈ ÇÔ¼ö NumberCompare´Â ifÀÇ Á¶°Ç num1 > num2¸¦ ¸¸Á·ÇÏ¸é ´ÙÀ½ ¹®ÀåÀ» ÇÔ¼öÀÇ Áß°£¿¡¼­ ½ÇÇàÇÑ´Ù.
+ìœ„ ì˜ˆì œì—ì„œ ì •ì˜ëœ í•¨ìˆ˜ NumberCompareëŠ” ifì˜ ì¡°ê±´ num1 > num2ë¥¼ ë§Œì¡±í•˜ë©´ ë‹¤ìŒ ë¬¸ìž¥ì„ í•¨ìˆ˜ì˜ ì¤‘ê°„ì—ì„œ ì‹¤í–‰í•œë‹¤.
 
 return num1;
 
-ÀÌ·¸µí ÇÔ¼öÀÇ Áß°£¿¡µµ ¾ó¸¶µçÁö return¹®ÀÌ ¿Ã ¼ö ÀÖ´Ù.
-±×·³ ÀÌ¹ø¿¡´Â 5Çà°ú 6ÇàÀ» °üÂûÇÏÀÚ.
-ÀÌ µÎ °¡Áö printf ÇÔ¼ö È£Ãâ¹®ÀÇ µÎ ¹øÂ° ÀÎÀÚ·Î´Â %d¿¡ ´ëÀÀÇÏ´Â Á¤¼ö°¡ ¿Í¾ß ÇÏ´Âµ¥,
-ÀÌ À§Ä¡¿¡ ´ÙÀ½°ú °°ÀÌ 'ÇÔ¼öÀÇ È£Ãâ'ÀÌ ´ë½Å ÀÚ¸®¸¦ Àâ°í ÀÖ´Ù.
+ì´ë ‡ë“¯ í•¨ìˆ˜ì˜ ì¤‘ê°„ì—ë„ ì–¼ë§ˆë“ ì§€ returnë¬¸ì´ ì˜¬ ìˆ˜ ìžˆë‹¤.
+ê·¸ëŸ¼ ì´ë²ˆì—ëŠ” 5í–‰ê³¼ 6í–‰ì„ ê´€ì°°í•˜ìž.
+ì´ ë‘ ê°€ì§€ printf í•¨ìˆ˜ í˜¸ì¶œë¬¸ì˜ ë‘ ë²ˆì§¸ ì¸ìžë¡œëŠ” %dì— ëŒ€ì‘í•˜ëŠ” ì •ìˆ˜ê°€ ì™€ì•¼ í•˜ëŠ”ë°,
+ì´ ìœ„ì¹˜ì— ë‹¤ìŒê³¼ ê°™ì´ 'í•¨ìˆ˜ì˜ í˜¸ì¶œ'ì´ ëŒ€ì‹  ìžë¦¬ë¥¼ ìž¡ê³  ìžˆë‹¤.
 
-printf("3°ú 4Áß¿¡¼­ Å« ¼ö´Â %d ÀÌ´Ù. \n", NumberCompare(3, 4));
-printf("7°ú 2Áß¿¡¼­ Å« ¼ö´Â %d ÀÌ´Ù. \n", NumberCompare(7, 2));
+printf("3ê³¼ 4ì¤‘ì—ì„œ í° ìˆ˜ëŠ” %d ì´ë‹¤. \n", NumberCompare(3, 4));
+printf("7ê³¼ 2ì¤‘ì—ì„œ í° ìˆ˜ëŠ” %d ì´ë‹¤. \n", NumberCompare(7, 2));
 
-ÀÌ °æ¿ì¿¡´Â ÇÔ¼öÀÇ ¹ÝÈ¯ °ªÀÌ Àü´ÞÀÎÀÚ¸¦ ´ë½ÅÇÏ°Ô µÈ´Ù.
-Áï, NumberCompare ÇÔ¼ö°¡ ¸ÕÀú È£ÃâµÇ¾î ´ÙÀ½ÀÇ ÇüÅÂ·Î printf ÇÔ¼öÀÇ È£ÃâÀÌ ÁøÇàµÈ´Ù.
+ì´ ê²½ìš°ì—ëŠ” í•¨ìˆ˜ì˜ ë°˜í™˜ ê°’ì´ ì „ë‹¬ì¸ìžë¥¼ ëŒ€ì‹ í•˜ê²Œ ëœë‹¤.
+ì¦‰, NumberCompare í•¨ìˆ˜ê°€ ë¨¼ì € í˜¸ì¶œë˜ì–´ ë‹¤ìŒì˜ í˜•íƒœë¡œ printf í•¨ìˆ˜ì˜ í˜¸ì¶œì´ ì§„í–‰ëœë‹¤.
 
-printf("3°ú 4Áß¿¡¼­ Å« ¼ö´Â %d ÀÌ´Ù. \n", 4);
-printf("7°ú 2Áß¿¡¼­ Å« ¼ö´Â %d ÀÌ´Ù. \n", 7);
+printf("3ê³¼ 4ì¤‘ì—ì„œ í° ìˆ˜ëŠ” %d ì´ë‹¤. \n", 4);
+printf("7ê³¼ 2ì¤‘ì—ì„œ í° ìˆ˜ëŠ” %d ì´ë‹¤. \n", 7);
 
-Âü°í·Î À§ ¿¹Á¦¿¡¼­ º¸ÀÎ ÇÔ¼ö NumberCompare´Â ¿ÏÀüÇÏÁö ¸øÇÏ´Ù. µ¿ÀÏÇÑ °ªÀÇ µÎ Á¤¼ö°¡ Àü´ÞµÇ¾úÀ» ¶§,
-°ªÀÌ µ¿ÀÏÇÔÀ» ¾Ë¸®Áö ¸øÇÏ´Â ±¸Á¶·Î Á¤ÀÇµÇ¾î ÀÖ´Ù. µû¶ó¼­ ÀÌÈÄ¿¡ ¾à°£ÀÇ ¼öÁ¤ÀÌ ºÒ°¡ÇÇÇÏ´Ù.
+ì°¸ê³ ë¡œ ìœ„ ì˜ˆì œì—ì„œ ë³´ì¸ í•¨ìˆ˜ NumberCompareëŠ” ì™„ì „í•˜ì§€ ëª»í•˜ë‹¤. ë™ì¼í•œ ê°’ì˜ ë‘ ì •ìˆ˜ê°€ ì „ë‹¬ë˜ì—ˆì„ ë•Œ,
+ê°’ì´ ë™ì¼í•¨ì„ ì•Œë¦¬ì§€ ëª»í•˜ëŠ” êµ¬ì¡°ë¡œ ì •ì˜ë˜ì–´ ìžˆë‹¤. ë”°ë¼ì„œ ì´í›„ì— ì•½ê°„ì˜ ìˆ˜ì •ì´ ë¶ˆê°€í”¼í•˜ë‹¤.
 */
