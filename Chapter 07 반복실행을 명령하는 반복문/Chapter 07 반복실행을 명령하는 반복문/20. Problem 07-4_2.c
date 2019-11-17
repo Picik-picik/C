@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-	int num, i, sum = 1;
+	int num, i, result = 1;
 	
 	printf("문제 07-4 [for문의 활용]\n");
 	printf("문제 2)\n");
@@ -9,8 +9,8 @@ int main(void) {
 	scanf_s("%d", &num);
 
 	for (i = 1; i <= num; i++)
-		sum = sum * i;
+		result = result * i;
 
-	printf("%d! = %d\n", num, sum);
+	printf("%d! = %d\n", num, result);
 	return 0;
 }
